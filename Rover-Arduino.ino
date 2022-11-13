@@ -9,7 +9,7 @@
 
 void setup() {
   // codigo base
-  pinMode(EN2, OUTPUT);
+  pinMode(EN1, OUTPUT);
   pinMode(IN1, OUTPUT);
   pinMode(IN2, OUTPUT);
   pinMode(EN2, OUTPUT);
