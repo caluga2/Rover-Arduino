@@ -1,59 +1,59 @@
 //ubicación de los pines
-int enA = 9; //velocidad motor A
-int in1 = 2;
-int in2 = 3;
+#define EN1 6 //velocidad motor A
+#define IN1 9
+#define IN2 10
 
-int enB = 10; //velocidad motor A
-int in3 = 4;
-int in4 = 5;
+#define EN2 5 //velocidad motor A
+#define IN3 11
+#define IN4 12
 
 void setup() {
   // codigo base
-  pinMode(enA, OUTPUT);
-  pinMode(in1, OUTPUT);
-  pinMode(in2, OUTPUT);
-  pinMode(enB, OUTPUT);
-  pinMode(in3, OUTPUT);
-  pinMode(in4, OUTPUT);
+  pinMode(EN2, OUTPUT);
+  pinMode(IN1, OUTPUT);
+  pinMode(IN2, OUTPUT);
+  pinMode(EN2, OUTPUT);
+  pinMode(IN3, OUTPUT);
+  pinMode(IN4, OUTPUT);
 
-  digitalWrite(in1, HIGH); //adelante por 1.5s
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  analogWrite(enA, 255);
-  analogWrite(enB, 255);
+  digitalWrite(IN1, HIGH); //adelante por 1.5s
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+  analogWrite(EN1, 255);
+  analogWrite(EN2, 255);
   delay(1500);
 
-  digitalWrite(in1, LOW); //parar por 0.5s
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
-  analogWrite(enA, 0);
-  analogWrite(enB, 0);
+  digitalWrite(IN1, LOW); //parar por 0.5s
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+  analogWrite(EN1, 0);
+  analogWrite(EN2, 0);
   delay(500);
 
-  digitalWrite(in1, HIGH); //girar por 1s
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, HIGH);
-  digitalWrite(in4, LOW);
-  analogWrite(enA, 255);
-  analogWrite(enB, 255);
+  digitalWrite(IN1, HIGH); //girar por 1s
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, HIGH);
+  digitalWrite(IN4, LOW);
+  analogWrite(EN1, 255);
+  analogWrite(EN2, 255);
   delay(1000);
 
-  digitalWrite(in1, LOW); //girar para el otro lado por 1s
-  digitalWrite(in2, HIGH);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, HIGH);
-  analogWrite(enA, 255);
-  analogWrite(enB, 255);
+  digitalWrite(IN1, LOW); //girar para el otro lado por 1s
+  digitalWrite(IN2, HIGH);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, HIGH);
+  analogWrite(EN1, 255);
+  analogWrite(EN2, 255);
   delay(1000);
 
-  digitalWrite(in1, LOW); //parar por 0.5s
-  digitalWrite(in2, LOW);
-  digitalWrite(in3, LOW);
-  digitalWrite(in4, LOW);
-  analogWrite(enA, 0);
-  analogWrite(enB, 0);
+  digitalWrite(IN1, LOW); //parar por 0.5s
+  digitalWrite(IN2, LOW);
+  digitalWrite(IN3, LOW);
+  digitalWrite(IN4, LOW);
+  analogWrite(EN1, 0);
+  analogWrite(EN2, 0);
   delay(500);
 }
 
